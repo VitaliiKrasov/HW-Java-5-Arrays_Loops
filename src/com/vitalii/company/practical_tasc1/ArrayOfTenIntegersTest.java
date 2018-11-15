@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class TestArrayOfTenIntegers {
+public class ArrayOfTenIntegersTest {
 
     @Test
     public void testGetCompareAmounts() {
