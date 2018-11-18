@@ -22,6 +22,7 @@ public class Employee {
         this.salary = salary;
     }
 
+
     public static void main(String[] args) throws IOException {
         Employee[] employees = new Employee[5];
         employees[0] = new Employee("Vasia Pupkin", 1, 1500);
