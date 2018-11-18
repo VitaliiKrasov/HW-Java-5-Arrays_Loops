@@ -29,23 +29,10 @@ public class ArreyOfTenIntegers {
         int biggest = getBiggest(array);
         System.out.println("the biggest of these numbers is " + biggest);
 
-        int sumOfPositive = 0;
-        int amountOfPositive = 0;
-        int amountOfNegative = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
-                break;
-            } else if (array[i] > 0) {
-                sumOfPositive += array[i];
-                amountOfPositive++;
-            } else {
-                amountOfNegative++;
-            }
-        }
-        System.out.println("the sum of positive numbers in the array is " + sumOfPositive);
-        System.out.println("the amount of negative numbers in the array " + amountOfNegative);
+        System.out.println("the sum of positive numbers in the array is: " + getSumOfPositive(array));
+        System.out.println("the amount of negative numbers in the array: " + getAmountOfNegative(array));
 
-        int compareAmounts = getCompareAmounts(amountOfPositive, amountOfNegative);
+        int compareAmounts = getCompareAmounts(getAmountOfPositive(array), getAmountOfNegative(array));
 
         if (compareAmounts > 0) {
             System.out.println("the positive values there are more then negative");
@@ -58,10 +45,6 @@ public class ArreyOfTenIntegers {
 
     }
 
-    public static int getCompareAmounts(int amountOfPositive, int amountOfNegative) {
-        return amountOfPositive - amountOfNegative;
-    }
-
     public static int getBiggest(int[] array) {
         int biggest;
         biggest = array[0];
@@ -71,5 +54,39 @@ public class ArreyOfTenIntegers {
             }
         }
         return biggest;
+    }
+
+    public static int getSumOfPositive(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+                result += array[i];
+            }
+        }
+        return result;
+    }
+
+    public static int getAmountOfNegative(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0) {
+                result++;
+            }
+        }
+        return result;
+    }
+
+    public  static int getAmountOfPositive(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+                result++;
+            }
+        }
+        return result;
+    }
+
+    public static int getCompareAmounts(int amountOfPositive, int amountOfNegative) {
+        return amountOfPositive - amountOfNegative;
     }
 }
