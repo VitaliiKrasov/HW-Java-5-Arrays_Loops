@@ -1,4 +1,4 @@
-package com.vitalii.company.homework2;
+package com.vitalii.company.main.homework2;
 
 import java.util.Random;
 

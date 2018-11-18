@@ -1,4 +1,4 @@
-package com.vitalii.company.homework1;
+package com.vitalii.company.main.homework1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class Homework1 {
     final static int[] AMOUNT_DAYS_OF_MONTH = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-    static int getAmountDayOfMonth(int i) throws Exception{
+    public static int getAmountDayOfMonth(int i) throws Exception{
         return AMOUNT_DAYS_OF_MONTH[i - 1];
     }
 

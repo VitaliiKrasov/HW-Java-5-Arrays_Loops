@@ -1,4 +1,4 @@
-package com.vitalii.company.practical_tasc2;
+package com.vitalii.company.main.practical_tasc2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -42,7 +42,7 @@ public class Employee {
         System.out.println(toString(employees));
     }
 
-    static String getByDepartment(Employee[] employees, int input) {
+    public static String getByDepartment(Employee[] employees, int input) {
         String result = "";
         for (Employee employee : employees) {
             if (employee.departmentNumber == input) {
@@ -52,7 +52,7 @@ public class Employee {
         return result;
     }
 
-    static Employee[] sortBySalary(Employee[] employees) {
+    public static Employee[] sortBySalary(Employee[] employees) {
         Employee[] result = employees;
         for (int i = 0; i < employees.length - 1; i++) {
             for (int j = 0; j < employees.length - i - 1; j++) {
@@ -66,7 +66,7 @@ public class Employee {
         return result;
     }
 
-    static String toString(Employee[] employees) {
+    public static String toString(Employee[] employees) {
         String result = "";
         for (int i = 0; i < employees.length; i++) {
             result += String.format("name: %1$s, salary: %2$s\n",

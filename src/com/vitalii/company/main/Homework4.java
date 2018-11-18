@@ -1,4 +1,4 @@
-package com.vitalii.company.homework4;
+package com.vitalii.company.main.homework4;
 
 import java.util.Scanner;
 

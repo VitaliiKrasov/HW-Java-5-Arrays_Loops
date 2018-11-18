@@ -1,4 +1,4 @@
-package com.vitalii.company.practical_tasc2;
+package com.vitalii.company.test;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

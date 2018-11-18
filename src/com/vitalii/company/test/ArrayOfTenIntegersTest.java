@@ -1,5 +1,7 @@
-package com.vitalii.company.practical_tasc1;
+package com.vitalii.company.test;
 
+import com.vitalii.company.main.practical_tasc1.ArreyOfTenIntegers;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -8,7 +10,7 @@ public class ArrayOfTenIntegersTest {
 
     @Test
     public void testGetCompareAmounts() {
-        assertEquals(8, ArreyOfTenIntegers.getCompareAmounts(9,1));
+        Assert.assertEquals(8, ArreyOfTenIntegers.getCompareAmounts(9,1));
         assertEquals(0, ArreyOfTenIntegers.getCompareAmounts(3,3));
         assertEquals(-2, ArreyOfTenIntegers.getCompareAmounts(4,6));
 

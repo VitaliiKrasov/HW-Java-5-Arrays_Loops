@@ -1,4 +1,4 @@
-package com.vitalii.company.practical_tasc1;
+package com.vitalii.company.main.practical_tasc1;
 
 import java.util.Random;
 
@@ -58,11 +58,11 @@ public class ArreyOfTenIntegers {
 
     }
 
-    static int getCompareAmounts(int amountOfPositive, int amountOfNegative) {
+    public static int getCompareAmounts(int amountOfPositive, int amountOfNegative) {
         return amountOfPositive - amountOfNegative;
     }
 
-    static int getBiggest(int[] array) {
+    public static int getBiggest(int[] array) {
         int biggest;
         biggest = array[0];
         for (int i = 1; i < array.length; i++) {

@@ -1,4 +1,4 @@
-package com.vitalii.company.homework3;
+package com.vitalii.company.main.homework3;
 
 import java.io.IOException;
 import java.util.Scanner;
